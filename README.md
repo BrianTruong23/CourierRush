@@ -1,114 +1,62 @@
-# CourierRush
+# CourierRush 2D — Skeleton Project
 
-CourierRush is a fast-paced delivery game concept where players race against time, plan efficient routes, and complete courier jobs under increasing pressure.
+Skeleton project for the Module 4 driving game built in Unity. In this module, you will create a complete top-down driving game with car movement, an infinite procedurally generated road network, a navigation system, and a score counter.
 
-This repository is the starting point for the project. The README is written to make the intended product, development direction, and contribution path clear before the implementation is added.
+This repository contains the starting files and assets used throughout the lectures. The gameplay systems are intentionally incomplete so you can build them step-by-step during the module.
 
-## Vision
+---
 
-CourierRush aims to turn last-mile delivery into a quick, replayable challenge:
+## Features You Will Build
 
-- Pick up and deliver packages across a compact city map.
-- Balance speed, route planning, traffic, and delivery priority.
-- Chain successful deliveries for higher scores and better rewards.
-- Unlock tougher routes, new courier upgrades, and higher-risk contracts.
+- Tilemap-based road chunk design
+- Infinite procedural world generation
+- Object pooling for performance
+- Car movement and steering
+- Smooth camera follow
+- Target spawning on road tiles
+- Arrow navigation system
+- Score counter
 
-## Current Status
+---
 
-The repository is currently in the project setup stage. Core game code, assets, build tooling, and installation commands have not been added yet.
+## Project Setup
 
-Planned foundation work:
+1. Clone or download this repository.
+2. Open the project using Unity Hub.
+3. Open the `Scenes` folder.
+4. Run `SampleScene` to start the project.
 
-- Choose the game stack and runtime.
-- Add the first playable prototype.
-- Define core gameplay systems.
-- Add asset, audio, and level organization.
-- Set up automated checks and release workflow.
+---
 
-## Gameplay Goals
+## Controls
 
-CourierRush should feel immediate, readable, and rewarding:
+| Action | Key |
+|---|---|
+| Accelerate | W / Up Arrow |
+| Brake / Reverse | S / Down Arrow |
+| Steer Left | A / Left Arrow |
+| Steer Right | D / Right Arrow |
 
-- **Short sessions:** Each run should be easy to start and satisfying to replay.
-- **Meaningful routing:** Players should make quick decisions about distance, risk, and reward.
-- **Escalating pressure:** Timers, obstacles, and delivery density should increase over time.
-- **Clean feedback:** Pickups, drop-offs, streaks, missed deliveries, and upgrades should be obvious.
-- **Expandable design:** New neighborhoods, courier types, hazards, and objectives should fit naturally.
+---
 
-## Roadmap
+## Folder Structure
 
-### Milestone 1: Prototype
+| Folder | Purpose |
+|---|---|
+| Scenes | Unity scenes |
+| Scripts | Gameplay scripts |
+| Sprites | Car, road, arrow, and target sprites |
+| Prefabs | Chunk prefabs and target prefab |
+| Tiles | Tilemap assets and tile palettes |
+| Audio | Music and sound effects |
 
-- Create a basic map.
-- Add player movement.
-- Add package pickup and delivery points.
-- Add delivery timer and scoring.
-- Add a restartable game loop.
+---
 
-### Milestone 2: Core Game Loop
-
-- Add multiple jobs at once.
-- Add route pressure through deadlines or traffic.
-- Add score multipliers and streaks.
-- Add simple progression between runs.
-- Add pause, restart, and game-over states.
-
-### Milestone 3: Polish
-
-- Add finished UI.
-- Add sound effects and music.
-- Add animations and visual feedback.
-- Add difficulty tuning.
-- Add persistent high scores or player progression.
-
-### Milestone 4: Release
-
-- Add platform-specific build instructions.
-- Add automated tests or smoke checks.
-- Package a playable release.
-- Publish screenshots, gameplay clips, and release notes.
-
-## Suggested Project Structure
-
-The exact structure should follow the chosen engine or framework. A likely layout:
-
-```text
-CourierRush/
-|-- assets/
-|-- docs/
-|-- src/
-|-- tests/
-|-- README.md
-`-- LICENSE
-```
-
-## Development
-
-Development commands will be added after the project stack is selected.
-
-Until then, useful setup decisions include:
-
-- Game engine or framework.
-- Target platform: web, desktop, mobile, or multi-platform.
-- Language and package manager.
-- Art direction and asset pipeline.
-- Testing and release workflow.
-
-## Contributing
-
-Contributions are welcome once the initial project structure is in place.
-
-Good first areas to help with:
-
-- Gameplay design notes.
-- Prototype implementation.
-- UI and HUD concepts.
-- Map and level ideas.
-- Asset organization.
-- Build and release setup.
-
-Before opening a larger pull request, create an issue or discussion describing the proposed change so the project direction stays coherent.
-
-## License
-
-No license has been selected yet. Until a license is added, all rights are reserved by the repository owner.
+## Assets
+ 
+This project uses assets from the following Kenney packs.
+ 
+Kenney Assets:
+- https://kenney.nl/assets/racing-pack
+- https://kenney.nl/assets/game-icons
+- https://kenney.nl/assets/category:Audio
