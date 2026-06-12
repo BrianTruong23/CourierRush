@@ -28,7 +28,7 @@ public class DeliveryManager : MonoBehaviour
     public float deliveryTimeLimit = 20f;
 
     public TMP_Text DeliveryScore;
-    public float deliveryScore = 0f; 
+    public float deliveryScore = 0; 
 
     public TMP_Text InstructionText;
     public float instructionDisplayTime = 3f; 
@@ -50,6 +50,7 @@ public class DeliveryManager : MonoBehaviour
         objectiveRenderer = objectiveMarker.GetComponent<SpriteRenderer>();
         currentState = DeliveryState.WaitingForPickup;
         UpdateDeliveryScore();
+        UpdateTimerText();
         Invoke(nameof(SpawnPickup), 0.2f);
 
         ShowInstructions();
