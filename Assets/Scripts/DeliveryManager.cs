@@ -28,7 +28,7 @@ public class DeliveryManager : MonoBehaviour
     public float deliveryTimeLimit = 20f;
 
     public TMP_Text DeliveryScore;
-    public float deliveryScore = 0; 
+    public int deliveryScore = 0; 
 
     public TMP_Text InstructionText;
     public float instructionDisplayTime = 3f; 
