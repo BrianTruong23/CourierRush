@@ -2,7 +2,7 @@
 
 CourierRush is a top-down 2D Unity driving game about collecting packages and delivering them across an endlessly expanding road network before the timer runs out. The player controls a small courier car, follows an objective arrow, picks up a trophy package, races to a delivery target, avoids cones, and tries to complete as many deliveries as possible.
 
-![CourierRush gameplay overview](img/gamePlay.png)
+![CourierRush gameplay overview](img/currentGamePlay.png)
 
 ## Gameplay Overview
 
