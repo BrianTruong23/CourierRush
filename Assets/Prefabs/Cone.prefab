@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6536192302271059612}
   m_Layer: 6
   m_Name: Cone
-  m_TagString: Untagged
+  m_TagString: Collision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

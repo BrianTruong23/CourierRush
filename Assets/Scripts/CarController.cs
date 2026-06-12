@@ -16,6 +16,11 @@ public class CarController : MonoBehaviour
 
     float currentSpeed = 0f;
 
+    public AudioSource audioSource;
+    public AudioClip bumpSound; 
+    float lastBumpSoundTime;
+    float bumpSoundCoolTime = 0.25f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -50,5 +55,29 @@ public class CarController : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (!collision.gameObject.CompareTag("Collision"))
+        {
+            return; 
+        }
+
+        if (Time.time < lastBumpSoundTime + bumpSoundCoolTime)
+        {
+            return;
+        }
+
+        if (audioSource != null && bumpSound != null)
+        {
+            audioSource.PlayOneShot(bumpSound);
+
+            lastBumpSoundTime = Time.time;
+        }
+
+
+
+
     }
 }

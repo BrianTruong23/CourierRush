@@ -36,6 +36,10 @@ public class DeliveryManager : MonoBehaviour
     float currentDeliveryTime;
     bool timerRunning; 
 
+    public AudioSource audioSource;
+    public AudioClip pickupSound;
+    public AudioClip deliverySound;
+
 
     DeliveryState currentState;
     SpriteRenderer objectiveRenderer;
@@ -119,20 +123,36 @@ public class DeliveryManager : MonoBehaviour
 
       void PickUpPackage()
       {
+          PlaySound(pickupSound);
           currentState = DeliveryState.CarryingPackage;
+          
           StartDeliveryTimer();
           SpawnDeliveryTarget();
       }
 
       void CompleteDelivery()
       {
+          PlaySound(deliverySound);
           StopDeliveryTimer();
+   
 
           deliveryScore++;
           UpdateDeliveryScore();
           currentState = DeliveryState.WaitingForPickup;
           SpawnPickup();
+
+          
       }
+
+      void PlaySound(AudioClip clip)
+    {
+        if (audioSource == null || clip == null)
+        {
+            return;
+        }
+        audioSource.PlayOneShot(clip);
+        
+    }
 
       void SpawnPickup()
       {
